@@ -31,72 +31,74 @@
     <p class="page-form__teaser">
       Заполните анкету и мы подберём программу для вашего кота
     </p>
-    <section class="page-form__form">
+    <section class="form">
+      <h2 class="form__title">Форма подбора программы</h2>
       <form action="https://echo.htmlacademy.ru/" method="POST" class="main-form">
-        <fieldset class="main-form__parameters parameters">
-          <p class="parameters__name">
-            <label for="name">Имя:<sup>*</sup></label>
-            <input type="text" name="name" id="name" placeholder="Барсик">
+        <fieldset class="main-form__fieldset">
+          <p class="main-form__row">
+            <label for="name" class="main-form__default-label">Имя:<sup>*</sup></label>
+            <input type="text" name="name" id="name" placeholder="Барсик" class="main-form__default-input">
           </p>
-          <p class="parameters__weight">
-            <label for="weight">Вес(кг):<sup>*</sup></label>
-            <input type="number" name="weight" id="weight" value="7">
+          <p class="main-form__row">
+            <label for="weight" class="main-form__default-label">Вес(кг):<sup>*</sup></label>
+            <input type="number" name="weight" id="weight" value="7" class="main-form__default-input">
           </p>
-          <p class="parameters__age">
-            <label for="age">Возраст (лет):</label>
-            <input type="number" name="age" id="age" value="7">
-          </p>
-        </fieldset>
-        <fieldset class="main-form__target target">
-          <p class="target__losing-weight">
-            <input type="radio" name="weight-target" id="losing-weight" checked>
-            <label for="losing-weight">Похудение</label>
-          </p>
-          <p class="target__rising-weight">
-              <input type="radio" name="weight-target" id="rising-weight">
-              <label for="rising-weight">Набор массы</label>
-          </p>
-          <p class="target__unknown">
-              <input type="radio" name="weight-target" id="unknown">
-              <label for="unknown">Не знаю (нужен ваш совет)</label>
+          <p class="main-form__row">
+            <label for="age" class="main-form__default-label">Возраст (лет):</label>
+            <input type="number" name="age" id="age" value="7" class="main-form__default-input">
           </p>
         </fieldset>
-        <fieldset class="main-form_owner-contacts owner-contacts">
-          <h2 class="owner-contacts__title">Контактные данные (владельца кота)</h2>
-          <p class="owner-contacts__email">
-            <label for="email">E-mail:<sup>*</sup></label>
-            <input type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
+        <fieldset class="main-form__fieldset">
+          <p class="main-form__row">
+            <input type="radio" name="weight-target" id="losing-weight" class="main-form__radio-input" checked>
+            <label for="losing-weight" class="main-form__default-label">Похудение</label>
           </p>
-          <p class="owner-contacts__telephone">
-            <label for="telephone">Телефон:<sup>*</sup></label>
-            <input type="tel" name="telephone" id="telephone" placeholder="8 (960) 900-60-90">
+          <p class="main-form__row">
+              <input type="radio" name="weight-target" id="rising-weight" class="main-form__radio-input">
+              <label for="rising-weight" class="main-form__default-label">Набор массы</label>
+          </p>
+          <p class="main-form__row">
+              <input type="radio" name="weight-target" id="unknown" class="main-form__radio-input">
+              <label for="unknown" class="main-form__default-label">Не знаю (нужен ваш совет)</label>
           </p>
         </fieldset>
-        <fieldset class="main-form__comment comment">
-          <h2 class="comment__title">Комментарий</h2>
-          <textarea name="about-cat" id="about-cat" placeholder="Расскажите обо всех повадках кота"></textarea>
+        <fieldset class="main-form__fieldset main-form__fieldset--lines">
+          <h3 class="main-form__fieldset-title">Контактные данные (владельца кота)</h3>
+          <p class="main-form__row">
+            <label for="email" class="main-form__default-label">E-mail:<sup>*</sup></label>
+            <input type="email" name="email" id="email" placeholder="kuklachev@gmail.com" class="main-form__default-input">
+          </p>
+          <p class="main-form__row">
+            <label for="telephone" class="main-form__default-label">Телефон:<sup>*</sup></label>
+            <input type="tel" name="telephone" id="telephone" placeholder="8 (960) 900-60-90" class="main-form__default-input">
+          </p>
         </fieldset>
-        <fieldset class="main-form__additionally additionally">
-          <p class="additionally__sweetener">
-            <input type="checkbox" name="sweetener" id="sweetener" checked>
-            <label for="sweetener">Сахарозаменитель</label>
+        <fieldset class="main-form__fieldset main-form__fieldset--lines">
+          <h3 class="main-form__fieldset-title">Комментарий</h3>
+          <textarea name="about-cat" id="about-cat" placeholder="Расскажите обо всех повадках кота" class="main-form__textarea"></textarea>
+        </fieldset>
+        <fieldset class="main-form__fieldset main-form__fieldset--lines">
+          <h3 class="main-form__fieldset-title">Дополнительно</h3>
+          <p class="main-form__row">
+            <input type="checkbox" name="sweetener" id="sweetener" class="main-form__checkbox-input" checked>
+            <label for="sweetener" class="main-form__default-label">Сахарозаменитель</label>
           </p>
-          <p class="additionally__water">
-              <input type="checkbox" name="water" id="water">
-              <label for="water">Питьевая вода</label>
+          <p class="main-form__row">
+              <input type="checkbox" name="water" id="water" class="main-form__checkbox-input">
+              <label for="water" class="main-form__default-label">Питьевая вода</label>
           </p>
-          <p class="additionally__milk">
-              <input type="checkbox" name="milk" id="milk">
-              <label for="milk">Молоко</label>
+          <p class="main-form__row">
+              <input type="checkbox" name="milk" id="milk" class="main-form__checkbox-input">
+              <label for="milk" class="main-form__default-label">Молоко</label>
           </p>
-          <p class="additionally__vitamins">
-              <input type="checkbox" name="vitamins" id="vitamins">
-              <label for="vitamins">Витамины</label>
+          <p class="main-form__row">
+              <input type="checkbox" name="vitamins" id="vitamins" class="main-form__checkbox-input">
+              <label for="vitamins" class="main-form__default-label">Витамины</label>
           </p>
         </fieldset>
         <input type="submit" class="main-form__button button" value="Отправить заявку">
       </form>
-      <span class="main-form__footnote"><sup>*</sup> – Обязательные поля</span>
+      <span class="form__footnote"><sup>*</sup> – Обязательные поля</span>
     </section>
   </main>
 
