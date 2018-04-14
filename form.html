@@ -34,7 +34,7 @@
     <section class="form">
       <h2 class="form__title">Форма подбора программы</h2>
       <form action="https://echo.htmlacademy.ru/" method="POST" class="main-form">
-        <fieldset class="main-form__fieldset">
+        <fieldset class="main-form__fieldset main-form__fieldset--line">
           <p class="main-form__row">
             <label for="name" class="main-form__default-label">Имя:<sup>*</sup></label>
             <input type="text" name="name" id="name" placeholder="Барсик" class="main-form__default-input">
@@ -48,7 +48,7 @@
             <input type="number" name="age" id="age" value="7" class="main-form__default-input">
           </p>
         </fieldset>
-        <fieldset class="main-form__fieldset">
+        <fieldset class="main-form__fieldset main-form__fieldset--line">
           <p class="main-form__row">
             <input type="radio" name="weight-target" id="losing-weight" class="main-form__radio-input" checked>
             <label for="losing-weight" class="main-form__default-label">Похудение</label>
@@ -62,7 +62,7 @@
               <label for="unknown" class="main-form__default-label">Не знаю (нужен ваш совет)</label>
           </p>
         </fieldset>
-        <fieldset class="main-form__fieldset main-form__fieldset--lines">
+        <fieldset class="main-form__fieldset">
           <h3 class="main-form__fieldset-title">Контактные данные (владельца кота)</h3>
           <p class="main-form__row">
             <label for="email" class="main-form__default-label">E-mail:<sup>*</sup></label>
@@ -73,11 +73,11 @@
             <input type="tel" name="telephone" id="telephone" placeholder="8 (960) 900-60-90" class="main-form__contacts-input main-form__contacts-input--phone">
           </p>
         </fieldset>
-        <fieldset class="main-form__fieldset main-form__fieldset--lines">
+        <fieldset class="main-form__fieldset">
           <h3 class="main-form__fieldset-title">Комментарий</h3>
           <textarea name="about-cat" id="about-cat" placeholder="Расскажите обо всех повадках кота" class="main-form__textarea"></textarea>
         </fieldset>
-        <fieldset class="main-form__fieldset main-form__fieldset--lines">
+        <fieldset class="main-form__fieldset">
           <h3 class="main-form__fieldset-title">Дополнительно</h3>
           <p class="main-form__row">
             <input type="checkbox" name="sweetener" id="sweetener" class="main-form__checkbox-input" checked>
