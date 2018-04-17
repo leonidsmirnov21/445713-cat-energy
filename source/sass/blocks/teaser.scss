@@ -5,7 +5,7 @@
   padding-top: 30px;
   padding-bottom: 165px;
 
-  background-color: #65a93d;
+  background-color: $green;
 }
 
 .teaser__title {
@@ -15,6 +15,7 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
+  font-family: $oswald;
   text-align: center;
   color: rgba(255, 255, 255, 1);
 }
@@ -25,6 +26,7 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 14px;
+  font-family: $oswald;
   text-align: center;
   color: rgba(255, 255, 255, 1);
 }

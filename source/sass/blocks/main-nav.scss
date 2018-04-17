@@ -1,0 +1,30 @@
+.main-nav {
+
+}
+
+.main-nav__top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-nav__list {
+  @include list-reset;
+}
+
+.main-nav__item {
+  border-top: 1px solid #e6e6e6;
+}
+
+.main-nav__link {
+  display: block;
+  padding: 23px 0;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  font-family: $oswald;
+  text-align: center;
+  color: $black;
+  text-transform: uppercase;
+  text-decoration: none;
+}
