@@ -1,0 +1,59 @@
+.additional-products {
+  margin-bottom: 39px;
+  padding-top: 21px;
+}
+
+.additional-products__title {
+  margin-bottom: 31px;
+
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  font-family: $oswald;
+  color: $black;
+}
+
+.additional-products__list {
+  @include list-reset;
+}
+
+.additional-products__item {
+  padding-top: 14px;
+  padding-bottom: 17px;
+
+  border-top: 1px solid #cdcdcd;
+
+  &:last-of-type {
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+.additional-products__name {
+  margin-bottom: 18px;
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: $oswald;
+  color: $black;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.additional-products__table {
+  margin-bottom: 7px;
+}
+
+.additional-products__quantity {
+  width: 50%;
+  padding: 0;
+
+  text-align: left;
+}
+
+.additional-products__price {
+  width: 50%;
+  padding: 0;
+
+  text-align: right;
+}

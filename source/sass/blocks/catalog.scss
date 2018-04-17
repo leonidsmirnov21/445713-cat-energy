@@ -1,0 +1,123 @@
+.catalog {
+
+}
+
+.catalog__list {
+  @include list-reset;
+}
+
+.catalog__item {
+  padding-bottom: 24px;
+
+  border-bottom: $border;
+}
+
+.catalog__info {
+  display: flex;
+  align-items: center;
+}
+
+.catalog__link {
+
+}
+
+.catalog__image {
+
+}
+
+.catalog__text {
+
+}
+
+.catalog__title {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $oswald;
+  color: $black;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.catalog__table {
+  width: 100%;
+
+  font-size: 12px;
+  line-height: 16px;
+  color: $gray;
+}
+
+.catalog__parametr {
+  width: 50%;
+  padding: 0;
+
+  text-align: left;
+}
+
+.catalog__value {
+  width: 50%;
+  padding: 0;
+
+  text-align: right;
+}
+
+.catalog__button {
+
+}
+
+.catalog__all {
+  position: relative;
+
+  padding-top: 80px;
+  padding-bottom: 24px;
+
+  text-align: center;
+
+  border-bottom: $border;
+
+  &::before {
+    position: absolute;
+    top: 26px;
+    left: 0;
+    right: 0;
+
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+
+    background-image: url("../../img/icon-plus-mobile.svg");
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+
+    content: "";
+    opacity: 0.2;
+  }
+}
+
+.catalog__all-title {
+  margin-bottom: 12px;
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $oswald;
+  color: $black;
+  text-transform: uppercase;
+}
+
+.catalog__all-text {
+  margin-bottom: 23px;
+
+  font-size: 12px;
+  line-height: 16px;
+  color: $gray;
+}
+
+.catalog__all-button {
+
+
+  color: $gray;
+
+  background-color: #f2f2f2;
+}

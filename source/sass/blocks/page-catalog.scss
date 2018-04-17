@@ -1,0 +1,17 @@
+.page-catalog {
+
+}
+
+.page-catalog__title {
+  @include text-reset;
+  padding: 22px 0;
+
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 60px;
+  font-family: $oswald;
+  color: $black;
+
+  border-top: $border;
+  border-bottom: $border;
+}
