@@ -1,0 +1,90 @@
+// .form {
+
+// }
+
+.form__form {
+  margin-bottom: 10px;
+}
+
+.form__fieldset {
+  @include text-reset;
+  padding: 21px 0;
+
+  border: none;
+}
+
+.form__fieldset--line {
+  border-bottom: $border;
+}
+
+.form__row {
+  @include text-reset;
+  margin-bottom: 10px;
+
+  display: flex;
+  align-items: center;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.form__default-label {
+  margin-right: 15px;
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: $oswald;
+  color: $black;
+  text-transform: uppercase;
+}
+
+.form__default-label--right {
+  margin-right: 0;
+  margin-left: 15px;
+}
+
+.form__default-input {
+  flex-grow: 1;
+  padding: 12px 15px;
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: $oswald;
+  color: $black;
+  text-transform: uppercase;
+}
+
+.form__contacts-input {
+  flex-grow: 1;
+  padding: 12px 15px;
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: $oswald;
+  color: $black;
+  text-transform: uppercase;
+}
+
+.form__fieldset-title {
+  @include text-reset;
+  margin-bottom: 20px;
+
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  font-family: $oswald;
+  color: $black;
+}
+
+.form__footnote {
+  display: block;
+
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: $gray;text-align: center;
+}

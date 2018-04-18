@@ -13,6 +13,10 @@
 
 .main-nav__item {
   border-top: $border;
+
+  &:last-of-type {
+    border-bottom: $border;
+  }
 }
 
 .main-nav__link {
