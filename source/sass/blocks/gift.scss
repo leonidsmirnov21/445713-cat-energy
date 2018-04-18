@@ -1,17 +1,14 @@
 .gift {
   position: relative;
 
-  min-height: 289px;
   margin-bottom: 35px;
   padding-top: 190px;
 
-  // text-align: center;
+  text-align: center;
 
+  background-color: $green;
   background-image: url("../../img/gift-photo-mobile@1x.jpg");
-  background-size: contain;
   background-repeat: no-repeat;
-
-  box-sizing: border-box;
 }
 
 .gift__text {
