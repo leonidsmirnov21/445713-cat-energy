@@ -55,6 +55,10 @@
   font-family: $oswald;
   color: $black;
   text-transform: uppercase;
+
+  &::placeholder {
+    color: $black;
+  }
 }
 
 .form__contacts-input {
@@ -67,6 +71,10 @@
   font-family: $oswald;
   color: $black;
   text-transform: uppercase;
+
+  &::placeholder {
+    color: $black;
+  }
 }
 
 .form__fieldset-title {
@@ -78,6 +86,21 @@
   line-height: 24px;
   font-family: $oswald;
   color: $black;
+}
+
+.form__textarea {
+  padding: 12px 15px;
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: $oswald;
+  color: $black;
+  text-transform: uppercase;
+
+  &::placeholder {
+    color: $black;
+  }
 }
 
 .form__footnote {
