@@ -1,0 +1,44 @@
+.teaser {
+  position: relative;
+
+  margin-bottom: 135px;
+  padding-top: 30px;
+  padding-bottom: 165px;
+
+  background-color: $green;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.teaser__title {
+  @include text-reset;
+  margin-bottom: 25px;
+
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
+  font-family: $oswald;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+
+.teaser__slogan {
+  @include text-reset;
+
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: $oswald;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+
+.teaser__image {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -130px;
+
+  margin: auto;
+}

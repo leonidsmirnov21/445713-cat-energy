@@ -1,0 +1,22 @@
+.page-form__title {
+  @include text-reset;
+  margin: 22px 0;
+
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 60px;
+  font-family: $oswald;
+  color: $black;
+}
+
+.page-form__teaser {
+  @include text-reset;
+  margin-bottom: 20px;
+
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $oswald;
+  color: $black;
+  text-transform: uppercase;
+}
