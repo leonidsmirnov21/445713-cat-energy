@@ -99,3 +99,15 @@
     padding-right: 25px;
   }
 }
+
+@media (min-width: 1300px) {
+  .teaser {
+    width: 1220px;
+    padding-bottom: 268px;
+    padding-left: 83px;
+
+    background: none;
+
+    box-sizing: border-box;
+  }
+}

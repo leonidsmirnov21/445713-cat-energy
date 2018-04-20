@@ -65,3 +65,13 @@
     }
   }
 }
+
+@media (min-width: 1300px) {
+  .main-nav {
+    width: 1220px;
+  }
+
+  .main-nav__top {
+    width: 245px;
+  }
+}

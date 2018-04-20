@@ -159,8 +159,6 @@
 
       width: 140px;
       height: 194px;
-
-      background-image: url("../img/icon-cat-slim.svg");
     }
   }
 
@@ -171,8 +169,6 @@
 
       width: 268px;
       height: 112px;
-
-      background-image: url("../img/icon-cat-pro.svg");
     }
   }
 
@@ -195,5 +191,60 @@
   .programs__to-catalog {
     font-size: 20px;
     line-height: 20px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .programs {
+    width: 1220px;
+  }
+
+  .programs__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .programs__item {
+    width: 570px;
+    margin: 0;
+    padding-left: 53px;
+    padding-right: 53px;
+
+    box-sizing: border-box;
+
+    &::before {
+      top: 47px;
+      left: 52px;
+
+      display: block;
+      width: 100px;
+      height: 100px;
+
+      content: "";
+    }
+  }
+
+  .programs__item--slim {
+    &::after {
+      top: 41px;
+      left: 66px;
+
+      widows: 70px;
+      height: 97px;
+    }
+  }
+
+  .programs__item--pro {
+    &::after {
+      top: 69px;
+      left: 34px;
+
+      width: 134px;
+      height: 56px;
+    }
+  }
+
+  .programs__title {
+    text-align: center;
   }
 }

@@ -60,3 +60,20 @@
     padding-right: 42px;
   }
 }
+
+@media (min-width: 1300px) {
+  .contacts {
+    position: relative;
+  }
+
+  .contacts__info {
+    position: absolute;
+    top: 95px;
+    left: 40px;
+
+    width: 570px;
+    margin: 0;
+
+    background-color: #ffffff;
+  }
+}
