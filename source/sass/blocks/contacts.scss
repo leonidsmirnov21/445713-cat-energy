@@ -4,12 +4,13 @@
 
 .contacts__info {
   display: flex;
-  padding: 47px 0;
+  justify-content: space-between;
+  padding: 47px 6.25%;
 }
 
 .contacts__invite {
   @include text-reset;
-  width: 50%;
+  width: 125px;
 
   font-weight: normal;
   font-size: 16px;
@@ -17,14 +18,45 @@
   font-family: $oswald;
   color: $black;
   text-transform: uppercase;
+
+  box-sizing: border-box;
 }
 
 .contacts__adress {
   @include text-reset;
-  width: 50%;
+  width: 140px;
 
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
   color: $gray;
+
+  box-sizing: border-box;
+}
+
+.contacts__map {
+
+}
+
+.contacts__map-image {
+  width: 100%;
+  max-height: 400px;//временно
+}
+
+@media (min-width: 768px) {
+  .contacts__info {
+    width: 708px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .contacts__invite {
+    width: 192px;
+    padding-left: 42px;
+  }
+
+  .contacts__adress {
+    width: 192px;
+    padding-right: 42px;
+  }
 }

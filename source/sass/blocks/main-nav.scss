@@ -5,6 +5,7 @@
 .main-nav__top {
   display: flex;
   justify-content: space-between;
+  padding: 0 6.25%;
 }
 
 .main-nav__list {
@@ -31,4 +32,36 @@
   color: $black;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+
+@media (min-width: 768px) {
+  .main-nav {
+    display: flex;
+    align-items: center;
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  .main-nav__top {
+    width: 192px;
+    padding: 0;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .main-nav__item {
+    border-top: none;
+
+    &:last-of-type {
+      border-bottom: none;
+    }
+  }
 }
