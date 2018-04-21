@@ -195,70 +195,80 @@
           </div>
           <a class="catalog__button button" href="">Заказать</a>
         </li>
-      </ul>
-      <div class="catalog__all">
-        <b class="catalog__all-title">Показать ещё 100500 товаров</b>
-        <p class="catalog__all-text">На самом деле вкусов гораздо больше!</p>
-        <a class="catalog__all-button button" href="#">Показать всё</a>
-      </div>
-    </section>
-    <section class="additional-products">
-      <h2 class="additional-products__title">Дополнительные товары</h2>
-      <ul class="additional-products__list">
-        <li class="additional-products__item">
-          <a class="additional-products__name" href="#">Сахарозаменитель</a>
-          <table class="additional-products__table">
-            <tr>
-              <td class="additional-products__quantity">1 упаковка (100 г)</td>
-              <td class="additional-products__price">100 Р.</td>
-            </tr>
-          </table>
-          <a class="additional-products__button button" href="">Заказать</a>
-        </li>
-        <li class="additional-products__item">
-          <a class="additional-products__name" href="#">Питьевая вода</a>
-          <table class="additional-products__table">
-            <tr>
-              <td class="additional-products__quantity">5 литров</td>
-              <td class="additional-products__price">50 Р.</td>
-            </tr>
-          </table>
-          <a class="additional-products__button button" href="">Заказать</a>
-        </li>
-        <li class="additional-products__item">
-          <a class="additional-products__name" href="#">Молоко</a>
-          <table class="additional-products__table">
-            <tr>
-              <td class="additional-products__quantity">1 литр</td>
-              <td class="additional-products__price">100 Р.</td>
-            </tr>
-          </table>
-          <a class="additional-products__button button" href="">Заказать</a>
-        </li>
-        <li class="additional-products__item">
-          <a class="additional-products__name" href="#">Витамины</a>
-          <table class="additional-products__table">
-            <tr>
-              <td class="additional-products__quantity">1 упаковка (30 г)</td>
-              <td class="additional-products__price">300 Р.</td>
-            </tr>
-          </table>
-          <a class="additional-products__button button" href="">Заказать</a>
+        <li class="catalog__item catalog__all">
+          <b class="catalog__all-title">Показать ещё 100500 товаров</b>
+          <p class="catalog__all-text">На самом деле вкусов гораздо больше!</p>
+          <a class="catalog__all-button button" href="#">Показать всё</a>
         </li>
       </ul>
     </section>
-    <section class="gift">
-      <h2 class="visually-hidden">Специальное предложение</h2>
-      <p class="gift__text">
-        Закажите всё и получите чехол для кота в подарок!
-      </p>
-    </section>
+    <div class="additional-gift__wrapper">
+      <section class="additional-products">
+        <h2 class="additional-products__title">Дополнительные товары</h2>
+        <ul class="additional-products__list">
+          <li class="additional-products__item">
+            <div class="additional-products__info">
+              <a class="additional-products__name" href="#">Сахарозаменитель</a>
+              <table class="additional-products__table">
+                <tr>
+                  <td class="additional-products__quantity">1 упаковка (100 г)</td>
+                  <td class="additional-products__price">100 Р.</td>
+                </tr>
+              </table>
+            </div>
+            <a class="additional-products__button button" href="">Заказать</a>
+          </li>
+          <li class="additional-products__item">
+            <div class="additional-products__info">
+              <a class="additional-products__name" href="#">Питьевая вода</a>
+              <table class="additional-products__table">
+                <tr>
+                  <td class="additional-products__quantity">5 литров</td>
+                  <td class="additional-products__price">50 Р.</td>
+                </tr>
+              </table>
+            </div>
+            <a class="additional-products__button button" href="">Заказать</a>
+          </li>
+          <li class="additional-products__item">
+            <div class="additional-products__info">
+            <a class="additional-products__name" href="#">Молоко</a>
+              <table class="additional-products__table">
+                <tr>
+                  <td class="additional-products__quantity">1 литр</td>
+                  <td class="additional-products__price">100 Р.</td>
+                </tr>
+              </table>
+            </div>
+            <a class="additional-products__button button" href="">Заказать</a>
+          </li>
+          <li class="additional-products__item">
+            <div class="additional-products__info">
+              <a class="additional-products__name" href="#">Витамины</a>
+              <table class="additional-products__table">
+                <tr>
+                  <td class="additional-products__quantity">1 упаковка (30 г)</td>
+                  <td class="additional-products__price">300 Р.</td>
+                </tr>
+              </table>
+            </div>
+            <a class="additional-products__button button" href="">Заказать</a>
+          </li>
+        </ul>
+      </section>
+      <section class="gift">
+        <h2 class="visually-hidden">Специальное предложение</h2>
+        <p class="gift__text">
+          Закажите всё и получите чехол для кота в подарок!
+        </p>
+      </section>
+    </div>
   </main>
 
   <footer class="page-footer">
     <section class="page-footer__contacts contacts">
       <h2 class="visually-hidden">Контакты</h2>
-      <div class="contacts__info">
+      <div class="contacts__info contacts__info--tablet">
         <p class="contacts__invite">
           Приглашаем к сотрудничеству дилеров!
         </p>

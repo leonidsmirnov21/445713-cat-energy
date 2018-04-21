@@ -45,9 +45,7 @@
 
 @media (min-width: 768px) {
   .contacts__info {
-    width: 708px;
-    margin: 0 auto;
-    padding: 0;
+    padding: 30px 3.9%;
   }
 
   .contacts__invite {
@@ -58,6 +56,10 @@
   .contacts__adress {
     width: 192px;
     padding-right: 42px;
+  }
+
+  .contacts__info--tablet {
+    background-color: #f2f2f2;
   }
 }
 
