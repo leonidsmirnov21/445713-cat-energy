@@ -37,44 +37,48 @@
     <section class="form">
       <h2 class="visually-hidden">Форма подбора программы</h2>
       <form class="form__form" action="https://echo.htmlacademy.ru/" method="POST">
-        <fieldset class="form__fieldset form__fieldset--line">
-          <p class="form__row form__row--justify">
-            <label class="form__default-label" for="name">Имя:<sup>*</sup></label>
-            <input class="form__default-input" type="text" name="name" id="name" placeholder="Барсик">
-          </p>
-          <p class="form__row">
-            <label class="form__default-label" for="weight">Вес(кг):<sup>*</sup></label>
-            <input class="form__default-input" type="number" name="weight" id="weight" value="7">
-          </p>
-          <p class="form__row">
-            <label class="form__default-label" for="age">Возраст (лет):</label>
-            <input class="form__default-input" type="number" name="age" id="age" value="7">
-          </p>
-        </fieldset>
-        <fieldset class="form__fieldset form__fieldset--line">
-          <p class="form__row">
-            <input class="form__radio-input" type="radio" name="weight-target" id="losing-weight" checked>
-            <label class="form__default-label form__default-label--right" for="losing-weight">Похудение</label>
-          </p>
-          <p class="form__row">
-              <input class="form__radio-input" type="radio" name="weight-target" id="rising-weight">
-              <label class="form__default-label form__default-label--right" for="rising-weight">Набор массы</label>
-          </p>
-          <p class="form__row">
-              <input class="form__radio-input" type="radio" name="weight-target" id="unknown">
-              <label class="form__default-label form__default-label--right" for="unknown">Не знаю (нужен ваш совет)</label>
-          </p>
-        </fieldset>
+        <div class="form__fieldset-wrapper">
+          <fieldset class="form__fieldset form__fieldset--line">
+            <p class="form__row form__row--justify">
+              <label class="form__default-label" for="name">Имя:<sup>*</sup></label>
+              <input class="form__default-input" type="text" name="name" id="name" placeholder="Барсик">
+            </p>
+            <p class="form__row">
+              <label class="form__default-label" for="weight">Вес(кг):<sup>*</sup></label>
+              <input class="form__default-input" type="number" name="weight" id="weight" value="7">
+            </p>
+            <p class="form__row">
+              <label class="form__default-label" for="age">Возраст (лет):</label>
+              <input class="form__default-input" type="number" name="age" id="age" value="7">
+            </p>
+          </fieldset>
+          <fieldset class="form__fieldset form__fieldset--line form__fieldset--border">
+            <p class="form__row">
+              <input class="form__radio-input" type="radio" name="weight-target" id="losing-weight" checked>
+              <label class="form__default-label form__default-label--right" for="losing-weight">Похудение</label>
+            </p>
+            <p class="form__row">
+                <input class="form__radio-input" type="radio" name="weight-target" id="rising-weight">
+                <label class="form__default-label form__default-label--right" for="rising-weight">Набор массы</label>
+            </p>
+            <p class="form__row">
+                <input class="form__radio-input" type="radio" name="weight-target" id="unknown">
+                <label class="form__default-label form__default-label--right" for="unknown">Не знаю (нужен ваш совет)</label>
+            </p>
+          </fieldset>
+        </div>
         <fieldset class="form__fieldset">
           <h3 class="form__fieldset-title">Контактные данные (владельца кота)</h3>
-          <p class="form__row">
-            <label class="form__default-label" for="email">E-mail:<sup>*</sup></label>
-            <input class="form__contacts-input form__contacts-input--letter" type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
-          </p>
-          <p class="form__row">
-            <label class="form__default-label" for="telephone">Телефон:<sup>*</sup></label>
-            <input class="form__contacts-input form__contacts-input--phone" type="tel" name="telephone" id="telephone" placeholder="8 (960) 900-60-90">
-          </p>
+          <div class="form__contacts-wrapper">
+            <p class="form__row form__contacts-row">
+              <label class="form__default-label" for="email">E-mail:<sup>*</sup></label>
+              <input class="form__contacts-input form__contacts-input--letter" type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
+            </p>
+            <p class="form__row form__contacts-row">
+              <label class="form__default-label" for="telephone">Телефон:<sup>*</sup></label>
+              <input class="form__contacts-input form__contacts-input--phone" type="tel" name="telephone" id="telephone" placeholder="8 (960) 900-60-90">
+            </p>
+          </div>
         </fieldset>
         <fieldset class="form__fieldset">
           <h3 class="form__fieldset-title">Комментарий</h3>
@@ -82,33 +86,37 @@
         </fieldset>
         <fieldset class="form__fieldset">
           <h3 class="form__fieldset-title">Дополнительно</h3>
-          <p class="form__row">
-            <input class="form__checkbox-input" type="checkbox" name="sweetener" id="sweetener" checked>
-            <label class="form__default-label form__default-label--right" for="sweetener">Сахарозаменитель</label>
-          </p>
-          <p class="form__row">
-              <input class="form__checkbox-input" type="checkbox" name="water" id="water">
-              <label class="form__default-label form__default-label--right" for="water">Питьевая вода</label>
-          </p>
-          <p class="form__row">
-              <input class="form__checkbox-input" type="checkbox" name="milk" id="milk">
-              <label class="form__default-label form__default-label--right" for="milk">Молоко</label>
-          </p>
-          <p class="form__row">
-              <input class="form__checkbox-input" type="checkbox" name="vitamins" id="vitamins">
-              <label class="form__default-label form__default-label--right" for="vitamins">Витамины</label>
-          </p>
+          <div class="form__checkbox-wrapper">
+            <p class="form__row form__row--flex">
+              <input class="form__checkbox-input" type="checkbox" name="sweetener" id="sweetener" checked>
+              <label class="form__default-label form__default-label--right" for="sweetener">Сахарозаменитель</label>
+            </p>
+            <p class="form__row form__row--flex">
+                <input class="form__checkbox-input" type="checkbox" name="water" id="water">
+                <label class="form__default-label form__default-label--right" for="water">Питьевая вода</label>
+            </p>
+            <p class="form__row form__row--flex">
+                <input class="form__checkbox-input" type="checkbox" name="milk" id="milk">
+                <label class="form__default-label form__default-label--right" for="milk">Молоко</label>
+            </p>
+            <p class="form__row form__row--flex">
+                <input class="form__checkbox-input" type="checkbox" name="vitamins" id="vitamins">
+                <label class="form__default-label form__default-label--right" for="vitamins">Витамины</label>
+            </p>
+          </div>
         </fieldset>
-        <input class="form__button button" type="submit" value="Отправить заявку">
+        <p class="form__button-footnote">
+          <input class="form__button button" type="submit" value="Отправить заявку">
+          <span class="form__footnote"><sup>*</sup> – Обязательные поля</span>
+        </p>
       </form>
-      <span class="form__footnote"><sup>*</sup> – Обязательные поля</span>
     </section>
   </main>
 
   <footer class="page-footer">
     <section class="page-footer__contacts contacts">
       <h2 class="visually-hidden">Контакты</h2>
-      <div class="contacts__info">
+      <div class="contacts__info contacts__info--gray">
         <p class="contacts__invite">
           Приглашаем к сотрудничеству дилеров!
         </p>

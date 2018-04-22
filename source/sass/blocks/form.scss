@@ -8,7 +8,7 @@
 
 .form__fieldset {
   @include text-reset;
-  padding: 21px 0;
+  padding: 21px 6.25%;
 
   border: none;
 }
@@ -89,6 +89,7 @@
 }
 
 .form__textarea {
+  width: 100%;
   padding: 12px 15px;
 
   font-weight: normal;
@@ -98,9 +99,19 @@
   color: $gray;
   text-transform: uppercase;
 
+  box-sizing: border-box;
+
   &::placeholder {
     color: $gray;
   }
+}
+
+.form__button-footnote {
+  padding: 0 6.25%;
+}
+
+.form__button {
+  width: 100%;
 }
 
 .form__footnote {
@@ -111,4 +122,127 @@
   line-height: 16px;
   color: $gray;
   text-align: center;
+}
+
+
+@media (min-width: 768px) {
+  .form {
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  .form__form {
+    padding: 0 40px;
+
+    box-sizing: border-box;
+  }
+
+  .form__fieldset {
+    padding: 21px 0;
+  }
+
+  .form__fieldset--line {
+    border: none;
+  }
+
+  .form__fieldset--border {
+    border: $border;
+  }
+
+  .form__default-label {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .form__default-input {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .form__contacts-input {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .form__textarea {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .form__fieldset-title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .form__checkbox-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form__row--flex {
+    width: 284px;
+  }
+
+  .form__button-footnote {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .form__button {
+    width: 284px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .form__footnote {
+    width: 284px;
+
+    font-size: 16px;
+    line-height: 16px;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1300px) {
+  .form {
+    width: 1220px;
+  }
+
+  .form__form {
+    padding: 0;
+  }
+
+  .form__fieldset-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__fieldset--line {
+    width: 570px;
+  }
+
+  .form__contacts-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__contacts-row {
+    width: 570px;
+    margin: 0;
+  }
+
+  .form__row--flex {
+    width: 245px;
+  }
+
+  .form__button {
+    width: 570px;
+  }
+
+  .form__footnote {
+    width: 570px;
+  }
 }

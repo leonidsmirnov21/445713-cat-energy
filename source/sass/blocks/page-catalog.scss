@@ -16,15 +16,18 @@
 
 
 @media (min-width: 768px) {
-  .page-catalog__title{
+  .page-catalog__title {
     width: 708px;
     margin: 0 auto;
     padding: 22px 0;
+
+    font-size: 60px;
+    line-height: 60px;
   }
 }
 
 @media (min-width: 1300px) {
-  .page-catalog__title{
+  .page-catalog__title {
     width: 1220px;
   }
 }

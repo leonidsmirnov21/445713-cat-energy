@@ -142,7 +142,7 @@
 
     &::before {
       top: 92px;
-      left: 446px;
+      left: calc(100% - 262px);
 
       display: block;
       width: 200px;
@@ -155,7 +155,7 @@
   .programs__item--slim {
     &::after {
       top: 80px;
-      left: 475px;
+      left: calc(100% - 232px);
 
       width: 140px;
       height: 194px;
@@ -165,7 +165,7 @@
   .programs__item--pro {
     &::after {
       top: 135px;
-      left: 412px;
+      left: calc(100% - 296px);
 
       width: 268px;
       height: 112px;
@@ -176,6 +176,7 @@
     margin-bottom: 30px;
 
     font-size: 36px;
+    line-height: 37.02px;
     text-align: left;
   }
 
@@ -207,8 +208,10 @@
   .programs__item {
     width: 570px;
     margin: 0;
+    padding-top: 80px;
     padding-left: 53px;
     padding-right: 53px;
+    padding-bottom: 63px;
 
     box-sizing: border-box;
 

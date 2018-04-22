@@ -70,6 +70,10 @@
   }
 
   .teaser__title {
+    padding-right: 190px;
+
+    font-size: 60px;
+    line-height: 60px;
     color: $black;
     text-align: left;
   }
@@ -77,8 +81,11 @@
   .teaser__slogan {
     margin-bottom: 20px;
 
+    font-size: 20px;
+    line-height: 20px;
     color: $black;
     text-align: left;
+    text-transform: uppercase;
   }
 
   .teaser__image {
@@ -97,17 +104,33 @@
     width: auto;
     padding-left: 25px;
     padding-right: 25px;
+
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
 @media (min-width: 1300px) {
   .teaser {
     width: 1220px;
-    padding-bottom: 268px;
+    margin-bottom: 80px;
+    padding-bottom: 188px;
     padding-left: 83px;
 
-    background: none;
-
     box-sizing: border-box;
+  }
+
+  .teaser__title {
+    padding-right: 690px;
+  }
+
+  .teaser__image {
+    top: 0;
+    left: 0;
+
+    width: 552px;
+    height: 499px;
+
+    z-index: -1;
   }
 }
