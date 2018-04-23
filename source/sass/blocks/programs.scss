@@ -1,9 +1,5 @@
-// .programs {
-
-// }
-
-.programs__to-choice {
-  margin-bottom: 22px;
+.programs {
+  padding: 0 6.25%;
 }
 
 .programs__list {
@@ -127,4 +123,131 @@
   background-size: 24px 11px;
   background-position: center right;
   background-repeat: no-repeat;
+}
+
+
+@media (min-width: 768px) {
+  .programs {
+    width: 708px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .programs__item {
+    margin-bottom: 30px;
+    padding-top: 81px;
+    padding-left: 55px;
+    padding-right: 285px;
+    padding-bottom: 60px;
+
+    &::before {
+      top: 92px;
+      left: calc(100% - 262px);
+
+      display: block;
+      width: 200px;
+      height: 200px;
+
+      content: "";
+    }
+  }
+
+  .programs__item--slim {
+    &::after {
+      top: 80px;
+      left: calc(100% - 232px);
+
+      width: 140px;
+      height: 194px;
+    }
+  }
+
+  .programs__item--pro {
+    &::after {
+      top: 135px;
+      left: calc(100% - 296px);
+
+      width: 268px;
+      height: 112px;
+    }
+  }
+
+  .programs__title {
+    margin-bottom: 30px;
+
+    font-size: 36px;
+    line-height: 37.02px;
+    text-align: left;
+  }
+
+  .programs__text {
+    font-size: 16px;
+    line-height: 24px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .programs__to-catalog {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .programs {
+    width: 1220px;
+  }
+
+  .programs__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .programs__item {
+    width: 570px;
+    margin: 0;
+    padding-top: 80px;
+    padding-left: 53px;
+    padding-right: 53px;
+    padding-bottom: 63px;
+
+    box-sizing: border-box;
+
+    &::before {
+      top: 47px;
+      left: 52px;
+
+      display: block;
+      width: 100px;
+      height: 100px;
+
+      content: "";
+    }
+  }
+
+  .programs__item--slim {
+    &::after {
+      top: 41px;
+      left: 66px;
+
+      width: 70px;
+      height: 97px;
+    }
+  }
+
+  .programs__item--pro {
+    &::after {
+      top: 69px;
+      left: 34px;
+
+      width: 134px;
+      height: 56px;
+    }
+  }
+
+  .programs__title {
+    text-align: center;
+  }
 }

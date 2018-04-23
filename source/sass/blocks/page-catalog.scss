@@ -4,13 +4,30 @@
 
 .page-catalog__title {
   @include text-reset;
-  padding: 22px 0;
+  width: 280px;
+  padding: 22px 6.25%;
 
   font-weight: normal;
   font-size: 36px;
   line-height: 60px;
   font-family: $oswald;
   color: $black;
+}
 
-  border-bottom: $border;
+
+@media (min-width: 768px) {
+  .page-catalog__title {
+    width: 708px;
+    margin: 0 auto;
+    padding: 22px 0;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .page-catalog__title {
+    width: 1220px;
+  }
 }

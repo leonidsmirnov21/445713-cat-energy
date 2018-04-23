@@ -1,7 +1,8 @@
 .gift {
   position: relative;
 
-  margin-bottom: 35px;
+  width: 280px;
+  margin: 0 auto;
   padding-top: 190px;
 
   text-align: center;
@@ -19,4 +20,19 @@
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+}
+
+
+@media (min-width: 768px) {
+  .gift {
+    width: 708px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1300px) {
+  .gift {
+    width: 245px;
+    margin: 0;
+  }
 }

@@ -1,10 +1,13 @@
 .additional-products {
-  margin-bottom: 39px;
+  margin-bottom: 35px;
   padding-top: 21px;
 }
 
 .additional-products__title {
+  position: relative;
+
   margin-bottom: 31px;
+  padding: 0 6.25%;
 
   font-weight: normal;
   font-size: 24px;
@@ -15,9 +18,11 @@
 
 .additional-products__list {
   @include list-reset;
+  margin-bottom: 39px;
 }
 
 .additional-products__item {
+  padding: 0 6.25%;
   padding-top: 14px;
   padding-bottom: 17px;
 
@@ -56,4 +61,129 @@
   padding: 0;
 
   text-align: right;
+}
+
+
+@media (min-width: 768px) {
+  .additional-products {
+    margin-bottom: 76px;
+  }
+
+  .additional-products__title {
+    width: 708px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    padding: 0;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .additional-products__list {
+    width: 708px;
+    margin: 0 auto;
+    margin-bottom: 69px;
+
+    border: $border;
+    box-sizing: border-box;
+  }
+
+  .additional-products__item {
+    padding: 27px 38px;
+
+    &:first-of-type {
+      border-top: none;
+    }
+
+    &:last-of-type {
+      border-bottom: none;
+    }
+  }
+
+  .additional-products__info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .additional-products__name {
+    width: 50%;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .additional-products__table {
+    width: 50%;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .additional-products__quantity {
+    width: 70%;
+
+    text-align: right;
+  }
+
+  .additional-products__price {
+    width: 30%;
+  }
+}
+
+@media (min-width: 1300px) {
+  .additional-products {
+    margin-bottom: 86px;
+  }
+
+  .additional-gift__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+    margin: 0 auto;
+  }
+
+  .additional-products__title {
+    width: 1220px;
+    padding: 0;
+  }
+
+  .additional-products__list {
+    width: 895px;
+    margin: 0;
+  }
+
+  .additional-products__item {
+    display: flex;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .additional-products__name {
+    width: 285px;
+    margin-right: 40px;
+  }
+
+  .additional-products__table {
+    width: 285px;
+    margin-right: 40px;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .additional-products__quantity {
+    width: 50%;
+
+    text-align: left;
+  }
+
+  .additional-products__price {
+    width: 50%;
+  }
+
+  .additional-products__button {
+    width: 245px;
+
+    box-sizing: border-box;
+  }
 }
