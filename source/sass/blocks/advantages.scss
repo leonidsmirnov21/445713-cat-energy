@@ -1,12 +1,12 @@
 .advantages {
   padding: 0 6.25%;
-  padding-top: 29px;
+  padding-top: 15px;
   padding-bottom: 42px;
 }
 
 .advantages__title {
   @include text-reset;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 
   font-weight: normal;
   font-size: 36px;
@@ -78,9 +78,9 @@
 
 @media (min-width: 768px) {
   .advantages {
-    padding-top: 67px;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;
+    padding-top: 46px;
+
 
     border-bottom: $border;
   }
@@ -88,7 +88,7 @@
   .advantages__title {
     width: 708px;
     margin: 0 auto;
-    margin-bottom: 75px;
+    margin-bottom: 74px;
 
     font-size: 60px;
     line-height: 60px;
@@ -103,9 +103,10 @@
   }
 
   .advantages__item {
+    margin-bottom: 84px;
     padding-left: 0;
-    padding-right: 75px;
-    padding-top: 116px;
+    padding-right: 90px;
+    padding-top: 113px;
     padding-bottom: 46px;
 
     font-size: 16px;

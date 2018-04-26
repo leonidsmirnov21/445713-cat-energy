@@ -1,10 +1,33 @@
-.social {
-  padding: 23px 0;
-}
+// .social {
+
+// }
 
 .social__list {
   @include list-reset;
 
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  padding: 21px 60px;
+
+  border-top: $border;
+  border-bottom: $border;
+}
+
+.social__svg path {
+  fill: #666666;
+}
+
+
+@media (min-width: 768px) {
+  .social {
+    width: 30.73%;
+  }
+
+  .social__list {
+    justify-content: space-around;
+    padding: 0;
+
+    border: none;
+  }
 }

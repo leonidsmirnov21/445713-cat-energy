@@ -5,7 +5,9 @@
 .page-catalog__title {
   @include text-reset;
   width: 280px;
-  padding: 22px 6.25%;
+  margin-bottom: 35px;
+  padding: 0 6.25%;
+
 
   font-weight: normal;
   font-size: 36px;
@@ -19,7 +21,8 @@
   .page-catalog__title {
     width: 708px;
     margin: 0 auto;
-    padding: 22px 0;
+    margin-bottom: 30px;
+    padding: 0 3.9%;
 
     font-size: 60px;
     line-height: 60px;

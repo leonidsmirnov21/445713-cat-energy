@@ -8,7 +8,7 @@
 
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 320px;
+  background-size: 100% 306px;
 }
 
 .teaser__title {
@@ -29,7 +29,7 @@
   @include text-reset;
   width: 280px;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 
   font-weight: normal;
   font-size: 14px;
@@ -37,10 +37,7 @@
   font-family: $oswald;
   text-align: center;
   color: rgba(255, 255, 255, 1);
-}
-
-.teaser__image {
-  margin-bottom: 3px;
+  text-transform: uppercase;
 }
 
 .teaser__to-choice {
@@ -55,7 +52,7 @@
   .teaser {
     width: 708px;
     margin: 0 auto;
-    padding-bottom: 530px;
+    padding-bottom: 535px;
     padding-left: 90px;
 
     text-align: left;
@@ -67,6 +64,7 @@
 
   .teaser__title {
     width: 100%;
+    margin-bottom: 40px;
     padding-right: 190px;
 
     font-size: 60px;
@@ -79,7 +77,7 @@
 
   .teaser__slogan {
     width: 100%;
-    margin-bottom: 49px;
+    margin-bottom: 53px;
 
     font-size: 20px;
     line-height: 20px;
@@ -91,6 +89,7 @@
   .teaser__image {
     position: absolute;
 
+    left: 0;
     bottom: 0;
 
     width: 709px;
@@ -129,7 +128,7 @@
 
   .teaser__image {
     top: 0;
-    left: 0;
+    left: 490px;
 
     width: 552px;
     height: 499px;
