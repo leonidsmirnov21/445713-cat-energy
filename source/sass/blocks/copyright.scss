@@ -14,13 +14,7 @@
 
 .copyright__svg {
   display: block;
-}
 
-.copyright__svg path {
-  fill: #666666;
-}
-
-.copyright__svg {
   &:hover path,
   &:focus path {
     fill: $green;
@@ -29,6 +23,10 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+.copyright__svg path {
+  fill: #666666;
 }
 
 
