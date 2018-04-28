@@ -126,6 +126,18 @@
   background-size: 24px 11px;
   background-position: center right;
   background-repeat: no-repeat;
+
+  &:hover,
+  &:focus {
+    padding-right: 45px;
+
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+    background-size: 33px 11px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 
@@ -141,7 +153,7 @@
     padding-top: 75px;
     padding-left: 55px;
     padding-right: 280px;
-    padding-bottom: 60px;
+    padding-bottom: 62px;
 
     &::before {
       top: 92px;
@@ -178,7 +190,7 @@
   }
 
   .programs__title {
-    margin-bottom: 28px;
+    margin-bottom: 25px;
     padding: 0;
 
     font-size: 36px;
@@ -198,6 +210,8 @@
   }
 
   .programs__to-catalog {
+    padding-right: 40px;
+
     font-size: 20px;
     line-height: 20px;
   }
@@ -216,7 +230,7 @@
   .programs__item {
     width: 570px;
     margin: 0;
-    padding-top: 80px;
+    padding-top: 76px;
     padding-left: 53px;
     padding-right: 53px;
     padding-bottom: 63px;
@@ -256,6 +270,17 @@
   }
 
   .programs__title {
+    margin-bottom: 76px;
+    padding-left: 20px;
+
     text-align: center;
+  }
+
+  .programs__item--pro .programs__title {
+    padding-left: 60px;
+  }
+
+  .programs__text {
+    margin-bottom: 30px;
   }
 }

@@ -11,7 +11,11 @@
   background-color: $green;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+    background-size: 100%;
+  }
 }
 
 .gift__text {
@@ -29,6 +33,19 @@
   .gift {
     width: 708px;
     margin: 0 auto;
+    padding: 70px 0;
+    padding-left: 425px;
+
+    text-align: left;
+
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+
+    box-sizing: border-box;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+      background-size: 100%;
+    }
   }
 }
 

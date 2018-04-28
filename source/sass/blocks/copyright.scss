@@ -13,11 +13,22 @@
 }
 
 .copyright__svg {
-  margin-left: 20px;
+  display: block;
 }
 
 .copyright__svg path {
   fill: #666666;
+}
+
+.copyright__svg {
+  &:hover path,
+  &:focus path {
+    fill: $green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 

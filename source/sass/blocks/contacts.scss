@@ -66,7 +66,7 @@
   }
 
   .contacts__invite {
-    width: 195px;
+    width: 200px;
     padding-left: 42px;
 
     font-size: 20px;
@@ -74,11 +74,12 @@
   }
 
   .contacts__adress {
-    width: 195px;
+    width: 200px;
     padding-right: 42px;
 
     font-size: 16px;
     line-height: 20px;
+    text-align: right;
   }
 
   .contacts__map {
@@ -111,6 +112,8 @@
     background-color: #ffffff;
 
     box-sizing: border-box;
+
+    z-index: 10;
   }
 
   .contacts__invite {

@@ -8,7 +8,11 @@
 
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 306px;
+  background-size: 100% 305px;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
 }
 
 .teaser__title {
@@ -40,6 +44,11 @@
   text-transform: uppercase;
 }
 
+.teaser__image {
+  width: 280px;
+  height: 271px;
+}
+
 .teaser__to-choice {
   width: 280px;
   margin: auto;
@@ -52,7 +61,8 @@
   .teaser {
     width: 708px;
     margin: 0 auto;
-    padding-bottom: 535px;
+    padding-top: 30px;
+    padding-bottom: 530px;
     padding-left: 90px;
 
     text-align: left;
@@ -77,7 +87,7 @@
 
   .teaser__slogan {
     width: 100%;
-    margin-bottom: 53px;
+    margin-bottom: 50px;
 
     font-size: 20px;
     line-height: 20px;
@@ -93,7 +103,7 @@
     bottom: 0;
 
     width: 709px;
-    height: auto;
+    height: 609px;
     margin: 0;
 
     z-index: -1;
@@ -104,6 +114,7 @@
 
     display: inline-block;
     width: auto;
+    padding: 15px 0;
     padding-left: 25px;
     padding-right: 25px;
 
@@ -116,6 +127,7 @@
   .teaser {
     width: 1220px;
     margin-bottom: 80px;
+    padding-top: 80px;
     padding-bottom: 188px;
     padding-left: 83px;
 
@@ -126,9 +138,13 @@
     padding-right: 690px;
   }
 
+  .teaser__slogan {
+    margin-bottom: 54px;
+  }
+
   .teaser__image {
     top: 0;
-    left: 490px;
+    left: 450px;
 
     width: 552px;
     height: 499px;
