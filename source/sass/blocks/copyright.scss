@@ -12,6 +12,10 @@
   color: $gray;
 }
 
+.copyright__link {
+  margin-right: -10px;
+}
+
 .copyright__svg {
   display: block;
 
@@ -37,5 +41,9 @@
     padding: 0;
 
     text-align: right;
+  }
+
+  .copyright__link {
+    margin-left: 10px;
   }
 }

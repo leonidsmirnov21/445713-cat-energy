@@ -95,6 +95,7 @@
 
 @media (min-width: 768px) {
   .advantages {
+    margin-bottom: 30px;
     padding: 0;
     padding-top: 46px;
 
@@ -117,6 +118,7 @@
     flex-wrap: wrap;
     width: 708px;
     margin: 0 auto;
+    margin-bottom: -30px;
   }
 
   .advantages__item {
@@ -141,7 +143,7 @@
     &::after {
       position: absolute;
       top: -40px;
-      left: 100px;
+      left: 115px;
 
       margin: auto;
 
@@ -204,6 +206,7 @@
 
   .advantages__list {
     width: 1220px;
+    margin-bottom: 0;
   }
 
   .advantages__item {

@@ -279,10 +279,13 @@
   }
 
   .example-slider__scale-before {
+    display: block;
+    padding-bottom: 5px;
+
     font-size: 20px;
     line-height: 20px;
 
-    border-bottom: 1px dashed #bebebe;
+    border-bottom: 1px dotted #bebebe;
   }
 
   .example-slider__scale-line {
@@ -340,10 +343,13 @@
   }
 
   .example-slider__scale-after {
+    display: block;
+    padding-bottom: 5px;
+
     font-size: 20px;
     line-height: 20px;
 
-    border-bottom: 1px dashed #bebebe;
+    border-bottom: 1px dotted #bebebe;
   }
 }
 
