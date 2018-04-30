@@ -14,8 +14,12 @@
   border-bottom: $border;
 }
 
+.social__item {
+  width: 23px;
+}
+
 .social__item:nth-of-type(2) {
-  margin: 0 37px;
+  margin: 0 35px;
 }
 
 .social__svg path {
