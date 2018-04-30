@@ -8,7 +8,11 @@
 
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 320px;
+  background-size: 100% 305px;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
 }
 
 .teaser__title {
@@ -29,7 +33,7 @@
   @include text-reset;
   width: 280px;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 
   font-weight: normal;
   font-size: 14px;
@@ -37,10 +41,12 @@
   font-family: $oswald;
   text-align: center;
   color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
 }
 
 .teaser__image {
-  margin-bottom: 3px;
+  width: 280px;
+  height: 271px;
 }
 
 .teaser__to-choice {
@@ -55,6 +61,7 @@
   .teaser {
     width: 708px;
     margin: 0 auto;
+    padding-top: 30px;
     padding-bottom: 530px;
     padding-left: 90px;
 
@@ -67,6 +74,7 @@
 
   .teaser__title {
     width: 100%;
+    margin-bottom: 40px;
     padding-right: 190px;
 
     font-size: 60px;
@@ -79,7 +87,7 @@
 
   .teaser__slogan {
     width: 100%;
-    margin-bottom: 49px;
+    margin-bottom: 50px;
 
     font-size: 20px;
     line-height: 20px;
@@ -91,10 +99,11 @@
   .teaser__image {
     position: absolute;
 
+    left: 0;
     bottom: 0;
 
     width: 709px;
-    height: auto;
+    height: 609px;
     margin: 0;
 
     z-index: -1;
@@ -105,6 +114,7 @@
 
     display: inline-block;
     width: auto;
+    padding: 15px 0;
     padding-left: 25px;
     padding-right: 25px;
 
@@ -117,6 +127,7 @@
   .teaser {
     width: 1220px;
     margin-bottom: 80px;
+    padding-top: 50px;
     padding-bottom: 188px;
     padding-left: 83px;
 
@@ -127,9 +138,13 @@
     padding-right: 690px;
   }
 
+  .teaser__slogan {
+    margin-bottom: 54px;
+  }
+
   .teaser__image {
-    top: 0;
-    left: 0;
+    top: -30px;
+    left: 450px;
 
     width: 552px;
     height: 499px;

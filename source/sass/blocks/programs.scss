@@ -10,7 +10,8 @@
   position: relative;
 
   margin-bottom: 20px;
-  padding: 32px 21px;
+  padding: 30px 21px;
+  padding-bottom: 19px;
 
   background-color: #f2f2f2;
 
@@ -70,15 +71,17 @@
 
 .programs__title {
   @include text-reset;
-  margin-bottom: 35px;
+  margin-bottom: 27px;
+  padding-left: 70px;
 
   font-weight: normal;
   font-size: 24px;
   line-height: 37.02px;
   font-family: $oswald;
-  text-align: center;
   color: $black;
   text-transform: uppercase;
+
+  box-sizing: border-box;
 }
 
 .programs__text {
@@ -94,7 +97,7 @@
 
   &::after {
     position: absolute;
-    bottom: -20px;
+    bottom: -23px;
 
     display: block;
     width: 100%;
@@ -123,6 +126,18 @@
   background-size: 24px 11px;
   background-position: center right;
   background-repeat: no-repeat;
+
+  &:hover,
+  &:focus {
+    padding-right: 45px;
+
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+    background-size: 33px 11px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 
@@ -135,10 +150,10 @@
 
   .programs__item {
     margin-bottom: 30px;
-    padding-top: 81px;
+    padding-top: 75px;
     padding-left: 55px;
-    padding-right: 285px;
-    padding-bottom: 60px;
+    padding-right: 280px;
+    padding-bottom: 62px;
 
     &::before {
       top: 92px;
@@ -163,6 +178,8 @@
   }
 
   .programs__item--pro {
+    padding-right: 310px;
+
     &::after {
       top: 135px;
       left: calc(100% - 296px);
@@ -173,7 +190,8 @@
   }
 
   .programs__title {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
+    padding: 0;
 
     font-size: 36px;
     line-height: 37.02px;
@@ -181,6 +199,8 @@
   }
 
   .programs__text {
+    margin-bottom: 55px;
+
     font-size: 16px;
     line-height: 24px;
 
@@ -190,6 +210,8 @@
   }
 
   .programs__to-catalog {
+    padding-right: 40px;
+
     font-size: 20px;
     line-height: 20px;
   }
@@ -208,7 +230,7 @@
   .programs__item {
     width: 570px;
     margin: 0;
-    padding-top: 80px;
+    padding-top: 76px;
     padding-left: 53px;
     padding-right: 53px;
     padding-bottom: 63px;
@@ -248,6 +270,17 @@
   }
 
   .programs__title {
+    margin-bottom: 76px;
+    padding-left: 20px;
+
     text-align: center;
+  }
+
+  .programs__item--pro .programs__title {
+    padding-left: 60px;
+  }
+
+  .programs__text {
+    margin-bottom: 30px;
   }
 }

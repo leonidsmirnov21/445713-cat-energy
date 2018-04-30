@@ -13,9 +13,21 @@
 }
 
 .page-footer__logo {
-  padding: 35px 0;
+  padding-top: 38px;
+  padding-bottom: 30px;
 
   text-align: center;
+}
+
+.page-footer__logo-image {
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 // .page-footer__social {
@@ -30,7 +42,17 @@
   .page-footer__down {
     display: flex;
     justify-content: space-between;
-    padding: 0 3.9%;
+    align-items: center;
+    padding: 60px 3.9%;
+
+    box-sizing: border-box;
+  }
+
+  .page-footer__logo {
+    width: 30.73%;
+    padding: 0;
+
+    text-align: left;
   }
 }
 
@@ -38,6 +60,6 @@
   .page-footer__down {
     display: flex;
     justify-content: space-between;
-    padding: 0 4.46%;
+    padding: 56px 4.46%;
   }
 }

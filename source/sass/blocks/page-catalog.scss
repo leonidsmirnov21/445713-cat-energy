@@ -5,7 +5,10 @@
 .page-catalog__title {
   @include text-reset;
   width: 280px;
-  padding: 22px 6.25%;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  padding: 0 6.25%;
+
 
   font-weight: normal;
   font-size: 36px;
@@ -16,10 +19,15 @@
 
 
 @media (min-width: 768px) {
+  .page-catalog {
+    padding-top: 27px;
+  }
+
   .page-catalog__title {
     width: 708px;
     margin: 0 auto;
-    padding: 22px 0;
+    margin-bottom: 167px;
+    padding: 0 3.9%;
 
     font-size: 60px;
     line-height: 60px;
@@ -27,7 +35,12 @@
 }
 
 @media (min-width: 1300px) {
+  .page-catalog {
+    padding-top: 15px;
+  }
+
   .page-catalog__title {
     width: 1220px;
+    margin-bottom: 165px;
   }
 }

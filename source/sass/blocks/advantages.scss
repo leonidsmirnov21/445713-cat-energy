@@ -1,12 +1,12 @@
 .advantages {
   padding: 0 6.25%;
-  padding-top: 29px;
+  padding-top: 15px;
   padding-bottom: 42px;
 }
 
 .advantages__title {
   @include text-reset;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 
   font-weight: normal;
   font-size: 36px;
@@ -46,6 +46,7 @@
     background-color: #68b738;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 50px 50px;
 
     content: "";
   }
@@ -54,33 +55,50 @@
 .advantages__item--eco {
   &::before {
     background-image: url("../img/advantage-leaf@1x.png");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/advantage-leaf@2x.png");
+    }
   }
 }
 
 .advantages__item--simple {
   &::before {
     background-image: url("../img/advantage-powder@1x.png");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/advantage-powder@2x.png");
+    }
   }
 }
 
 .advantages__item--change {
   &::before {
     background-image: url("../img/advantage-dining@1x.png");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/advantage-dining@2x.png");
+    }
   }
 }
 
 .advantages__item--time {
   &::before {
     background-image: url("../img/advantage-clock@1x.png");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/advantage-clock@2x.png");
+    }
   }
 }
 
 
 @media (min-width: 768px) {
   .advantages {
-    padding-top: 67px;
-    padding-left: 0;
-    padding-right: 0;
+    margin-bottom: 30px;
+    padding: 0;
+    padding-top: 46px;
+
 
     border-bottom: $border;
   }
@@ -88,7 +106,7 @@
   .advantages__title {
     width: 708px;
     margin: 0 auto;
-    margin-bottom: 75px;
+    margin-bottom: 74px;
 
     font-size: 60px;
     line-height: 60px;
@@ -100,12 +118,14 @@
     flex-wrap: wrap;
     width: 708px;
     margin: 0 auto;
+    margin-bottom: -30px;
   }
 
   .advantages__item {
+    margin-bottom: 84px;
     padding-left: 0;
-    padding-right: 75px;
-    padding-top: 116px;
+    padding-right: 90px;
+    padding-top: 113px;
     padding-bottom: 46px;
 
     font-size: 16px;
@@ -123,7 +143,7 @@
     &::after {
       position: absolute;
       top: -40px;
-      left: 100px;
+      left: 115px;
 
       margin: auto;
 
@@ -173,7 +193,8 @@
 
 @media (min-width: 1300px) {
   .advantages {
-    padding-top: 95px;
+    margin-bottom: 30px;
+    padding-top: 73px;
     padding-bottom: 0;
 
     border: none;
@@ -185,11 +206,13 @@
 
   .advantages__list {
     width: 1220px;
+    margin-bottom: 0;
   }
 
   .advantages__item {
     width: 245px;
-    padding-top: 116px;
+    margin-bottom: 0;
+    padding-top: 110px;
     padding-right: 0;
     padding-bottom: 47px;
 
