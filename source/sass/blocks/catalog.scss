@@ -233,10 +233,19 @@
 
   .catalog__table tr {
     display: flex;
+    justify-content: space-between;
     margin-bottom: 5px;
     padding: 5px 0;
 
     border-bottom: $border;
+  }
+
+  .catalog__parameter {
+    width: 50%;
+  }
+
+  .catalog__value {
+    width: 50%;
   }
 
   .catalog__all-title {
