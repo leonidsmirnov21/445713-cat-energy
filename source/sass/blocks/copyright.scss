@@ -17,20 +17,20 @@
 }
 
 .copyright__svg {
-  display: block;
+  fill: #666666;
+}
 
-  &:hover path,
-  &:focus path {
+.copyright__link:hover,
+.copyright__link:focus {
+  outline-color: $green;
+
+  .copyright__svg {
     fill: $green;
   }
 
   &:active {
     opacity: 0.3;
   }
-}
-
-.copyright__svg path {
-  fill: #666666;
 }
 
 
