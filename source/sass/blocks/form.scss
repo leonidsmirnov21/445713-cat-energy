@@ -28,7 +28,7 @@
 }
 
 .form__fieldset--line .form__row {
-  margin-bottom: 15px;
+  margin-bottom: 17px;
 
   &:last-of-type {
     margin-bottom: 0;
@@ -53,7 +53,7 @@
 }
 
 .form__fieldset--contacts .form__row {
-  margin-bottom: 13px;
+  margin-bottom: 16px;
 
   &:last-of-type {
     margin-bottom: 0;
@@ -236,7 +236,7 @@
 .form__fieldset-title {
   @include text-reset;
   position: relative;
-  margin-bottom: 32px;
+  margin-bottom: 33px;
 
   font-weight: normal;
   font-size: 24px;
@@ -611,7 +611,7 @@
     justify-content: space-between;
     width: 1220px;
     margin: 0 auto;
-    margin-bottom: 63px;
+    margin-bottom: 67px;
   }
 
   .form__fieldset--line {
@@ -622,6 +622,7 @@
 
   .form__fieldset--border {
     padding: 25px;
+    padding-bottom: 20px;
   }
 
   .form__contacts-wrapper {
