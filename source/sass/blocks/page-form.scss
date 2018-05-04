@@ -1,6 +1,7 @@
 .page-form__title {
   @include text-reset;
-  margin: 22px 0;
+  margin-top: 15px;
+  margin-bottom: 25px;
   padding: 0 6.25%;
 
   font-weight: normal;
@@ -12,6 +13,7 @@
 
 .page-form__teaser {
   @include text-reset;
+  width: 270px;
   margin-bottom: 20px;
   padding: 0 6.25%;
 
@@ -21,6 +23,8 @@
   font-family: $oswald;
   color: $black;
   text-transform: uppercase;
+
+  box-sizing: border-box;
 }
 
 
@@ -28,7 +32,8 @@
   .page-form__title {
     width: 708px;
     margin: 0 auto;
-    margin-bottom: 60px;
+    margin-top: 28px;
+    margin-bottom: 57px;
     padding: 0;
 
     font-size: 60px;
@@ -52,10 +57,12 @@
 @media (min-width: 1300px) {
   .page-form__title {
     width: 1220px;
+    margin-top: 15px;
   }
 
   .page-form__teaser {
     width: 1220px;
+    margin-bottom: 62px;
     padding: 0;
     padding-right: 895px;
   }

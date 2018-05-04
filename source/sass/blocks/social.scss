@@ -22,13 +22,15 @@
   margin: 0 35px;
 }
 
-.social__svg path {
+.social__svg {
   fill: #666666;
 }
 
-.social__svg {
-  &:hover path,
-  &:focus path {
+.social__link:hover,
+.social__link:focus {
+  outline-color: $green;
+
+  .social__svg {
     fill: $green;
   }
 

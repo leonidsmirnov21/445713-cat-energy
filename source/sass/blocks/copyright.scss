@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 0;
+  padding: 10px 0;
 }
 
 .copyright__text {
@@ -17,20 +17,20 @@
 }
 
 .copyright__svg {
-  display: block;
+  fill: #666666;
+}
 
-  &:hover path,
-  &:focus path {
+.copyright__link:hover,
+.copyright__link:focus {
+  outline-color: $green;
+
+  .copyright__svg {
     fill: $green;
   }
 
   &:active {
     opacity: 0.3;
   }
-}
-
-.copyright__svg path {
-  fill: #666666;
 }
 
 
