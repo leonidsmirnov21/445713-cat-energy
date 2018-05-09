@@ -286,6 +286,15 @@
     line-height: 20px;
 
     border-bottom: 1px dotted #bebebe;
+
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid #bebebe;
+    }
+
+    &:active {
+      border-color: transparent;
+    }
   }
 
   .example-slider__scale-line {
@@ -318,6 +327,7 @@
     border: $border;
     border-radius: 50%;
 
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
     box-sizing: border-box;
 
     cursor: pointer;
@@ -340,6 +350,18 @@
 
       content: "";
     }
+
+
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &:active {
+      border: 2px solid $green;
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.25);
+    }
   }
 
   .example-slider__scale-after {
@@ -350,6 +372,15 @@
     line-height: 20px;
 
     border-bottom: 1px dotted #bebebe;
+
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid #bebebe;
+    }
+
+    &:active {
+      border-color: transparent;
+    }
   }
 }
 
