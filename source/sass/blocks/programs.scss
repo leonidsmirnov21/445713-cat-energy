@@ -135,6 +135,10 @@
     background-size: 33px 11px;
   }
 
+  &:focus {
+    outline-color: $black;
+  }
+
   &:active {
     opacity: 0.3;
   }
