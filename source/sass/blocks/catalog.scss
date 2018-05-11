@@ -22,6 +22,15 @@
   width: 50%;
 
   line-height: 0;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .catalog__image {
@@ -46,6 +55,19 @@
   color: $black;
   text-transform: uppercase;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    outline-color: $black;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .catalog__table {
@@ -135,6 +157,15 @@
   color: $gray;
 
   background-color: #f2f2f2;
+
+  &:hover,
+  &:focus {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
 }
 
 

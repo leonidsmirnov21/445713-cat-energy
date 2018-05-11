@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cat energy: форма</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+  <link href="css/style.min.css" rel="stylesheet">
   <script>
     // Picture element HTML5 shiv
     document.createElement( "picture" );
@@ -19,7 +21,7 @@
           <picture>
             <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="Cat energy">
+            <img class="main-nav__logo-image" src="img/logo-mobile.svg" alt="Cat energy logo">
           </picture>
         </a>
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -77,11 +79,11 @@
           </fieldset>
         </div>
         <fieldset class="form__fieldset form__fieldset--contacts">
-          <h3 class="form__fieldset-title">
-            <div class="form__title-wrapper">
+          <div class="form__title-wrapper">
+            <h3 class="form__fieldset-title">
               <span class="form__fieldset-span">Контактные данные (владельца кота)</span>
-            </div>
-          </h3>
+            </h3>
+          </div>
           <div class="form__contacts-wrapper">
             <p class="form__row form__contacts-row">
               <label class="form__default-label" for="email">E-mail:<sup>*</sup></label>
@@ -94,21 +96,21 @@
           </div>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--comment">
-          <h3 class="form__fieldset-title">
-            <div class="form__title-wrapper">
+          <div class="form__title-wrapper">
+            <h3 class="form__fieldset-title">
               <span class="form__fieldset-span">Комментарий</span>
-            </div>
-          </h3>
+            </h3>
+          </div>
           <div class="form__textarea-wrapper">
             <textarea class="form__textarea" name="about-cat" id="about-cat" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--additional">
-          <h3 class="form__fieldset-title">
-            <div class="form__title-wrapper">
+          <div class="form__title-wrapper">
+            <h3 class="form__fieldset-title">
               <span class="form__fieldset-span">Дополнительно</span>
-            </div>
-          </h3>
+            </h3>
+          </div>
           <div class="form__checkbox-wrapper">
             <p class="form__row form__row--flex">
               <input class="form__checkbox-input visually-hidden" type="checkbox" name="sweetener" id="sweetener" checked>
@@ -163,7 +165,7 @@
     </section>
     <div class="page-footer__down">
       <div class="page-footer__logo">
-        <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24"  alt="Cat energy">
+        <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24"  alt="Cat energy logo">
       </div>
       <section class="page-footer__social social">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
@@ -193,7 +195,7 @@
       </section>
       <div class="page-footer__copyright copyright">
         <span class="copyright__text">HTML Academy</span>
-        <a class="copyright__link" href="#" aria-label="Html Academy">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Html Academy" target="_blank">
           <svg class="copyright__svg" width="40" height="50" viewBox="0 0 60 60">
             <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
           </svg>
@@ -201,7 +203,7 @@
       </div>
     </div>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 
   <script src="js/svg4everybody.min.js"></script>
   <script>svg4everybody(); // run it now or whenever you are ready</script>
