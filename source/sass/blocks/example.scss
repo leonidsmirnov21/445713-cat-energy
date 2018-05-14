@@ -126,12 +126,17 @@
 }
 
 .example-slider__scale-before {
+  padding: 0;
+
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
   font-family: $oswald;
   color: $black;
   text-transform: uppercase;
+
+  background-color: transparent;
+  border: none;
 
   cursor: pointer;
 }
@@ -164,12 +169,17 @@
 }
 
 .example-slider__scale-after {
+  padding: 0;
+
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
   font-family: $oswald;
   color: $black;
   text-transform: uppercase;
+
+  background-color: transparent;
+  border: none;
 
   cursor: pointer;
 }
@@ -299,6 +309,10 @@
       border-bottom: 1px solid #bebebe;
     }
 
+    &:focus {
+      outline-color: $black;
+    }
+
     &:active {
       border-color: transparent;
     }
@@ -381,6 +395,10 @@
     &:hover,
     &:focus {
       border-bottom: 1px solid #bebebe;
+    }
+
+    &:focus {
+      outline-color: $black;
     }
 
     &:active {
