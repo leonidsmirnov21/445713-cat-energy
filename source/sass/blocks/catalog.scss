@@ -232,12 +232,19 @@
 
   .catalog__image {
     position: absolute;
-    bottom: 305px;
     left: 0;
     right: 0;
 
     width: 324px;
     margin: auto;
+  }
+
+  .catalog__item:nth-of-type(odd) .catalog__image {
+    top: -45px;
+  }
+
+  .catalog__item:nth-of-type(2n) .catalog__image {
+    top: -81px;
   }
 
   .catalog__text {
