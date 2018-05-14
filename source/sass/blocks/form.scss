@@ -673,6 +673,14 @@
     margin: 0;
   }
 
+  .form__contacts-input--letter {
+    background-position-x: calc(100% - 20px);
+  }
+
+  .form__contacts-input--phone {
+    background-position-x: calc(100% - 20px);
+  }
+
   .form__textarea-wrapper {
     text-align: center;
   }

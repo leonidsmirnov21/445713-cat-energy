@@ -6,10 +6,13 @@
 
 // }
 
-.page-footer__down {
-  padding: 0 6.25%;
-
+.page-footer__down-wrapper {
   background-color: #f2f2f2;
+}
+
+.page-footer__down {
+  max-width: 1300px;
+  padding: 0 6.25%;
 }
 
 .page-footer__logo {
@@ -19,10 +22,14 @@
   text-align: center;
 }
 
-.page-footer__logo-image {
+.page-footer__logo-link[href] {
   &:hover,
   &:focus {
     opacity: 0.8;
+  }
+
+  &:focus {
+    outline: none;
   }
 
   &:active {
@@ -43,7 +50,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 60px 3.9%;
+    margin: 0 auto;
+    padding: 50px 3.9%;
 
     box-sizing: border-box;
   }
@@ -60,6 +68,6 @@
   .page-footer__down {
     display: flex;
     justify-content: space-between;
-    padding: 50px 2.5%;
+    padding: 50px 40px;
   }
 }
